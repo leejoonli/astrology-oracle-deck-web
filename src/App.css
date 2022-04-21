@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=My+Soul&display=swap');
+
 .container {
     /* border: 1px solid red; */
     position: relative;
@@ -61,14 +63,31 @@
     display: block;
     height: 100vh;
     transform: translateY(-84.4%);
-    padding: 5%;
+    padding: 15% 8% 15% 8%;
     animation: fadein .5s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.cardName {
+    font-size: 2rem;
+    font-family: 'My Soul';
+}
+
+.cardTag {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 600;
 }
 
 .cardMeaning {
     text-align: center;
+    line-height: 1.5;
+}
+
+.close {
+    font-size: 2rem;
+    font-family: 'My Soul';
 }
