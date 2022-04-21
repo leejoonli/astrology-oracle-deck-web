@@ -1,12 +1,21 @@
 .container {
     /* border: 1px solid red; */
+    position: relative;
     height: 100vh;
+    width: 100vw;
 }
 
 .container::before {
+    content: "";
     background-image: url("./img/starrybackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .5;
 }
 
 .fanContainer {
@@ -14,7 +23,8 @@
     justify-content: center;
     /* border: 1px solid red; */
     position: relative;
-    margin-top: 40%;
+    /* margin-top: 40%; */
+    padding-top: 40%;
     margin-bottom: 40%;
 }
 
@@ -29,6 +39,10 @@
 .cardFace {
     width: 114px;
     height: 200px;
+}
+
+.cardFace {
+    z-index: 1;
 }
 
 @keyframes fadein {
