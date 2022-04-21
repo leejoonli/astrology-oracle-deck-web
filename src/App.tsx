@@ -73,11 +73,16 @@ function App() {
 
   return (
     <div className="container">
-      <div className="fanContainer">
+      <div onClick={selectCards} className="fanContainer">
         <img src={card_back} alt="card back" className="cardBack" />
         <img src={card_back} alt="card back" className="cardBack" />
         <img src={card_back} alt="card back" className="cardBack" />
       </div>
+      {spread && (
+        <div>
+          hello world
+        </div>
+      )}
     </div>
   );
 }
