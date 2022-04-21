@@ -102,7 +102,7 @@ function App() {
           <img src={single?.card_face} alt="card face" className="cardBack" />
           <h1>{single?.name}</h1>
           <h2>{single?.tag}</h2>
-          <p>{single?.meaning}</p>
+          <p className="cardMeaning">{single?.meaning}</p>
           <button onClick={() => { setModal(false) }}>close</button>
         </div>
       )}
