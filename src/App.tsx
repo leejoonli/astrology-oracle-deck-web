@@ -98,11 +98,13 @@ function App() {
         </div>
       )}
       {modal && (
-        <div className="modalContainer">
-          <h1>{single?.name}</h1>
-          <h2>{single?.tag}</h2>
-          <p>{single?.meaning}</p>
-          <button onClick={() => { setModal(false) }}>close</button>
+        <div className="modalContainerBackground">
+          <div className="modalContainer">
+            <h1>{single?.name}</h1>
+            <h2>{single?.tag}</h2>
+            <p>{single?.meaning}</p>
+            <button onClick={() => { setModal(false) }}>close</button>
+          </div>
         </div>
       )}
     </div>

@@ -21,9 +21,8 @@
 .fanContainer {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
-    /* margin-top: 40%; */
     padding-top: 40%;
     margin-bottom: 40%;
 }
@@ -37,7 +36,7 @@
 
 .cardBack,
 .cardFace {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 114px;
     height: 200px;
 }
@@ -56,13 +55,32 @@
     }
 }
 
+.modalContainerBackground {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modalContainerBackground::before {
+    content: "";
+    background-image: url("./img/starrybackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+}
+
 .modalContainer {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     /* border: 1px solid red; */
+    background-color: white;
     height: 100vh;
-    background-image: url("./img/starrybackground.jpg");
-    transform: translateY(-83%);
+    transform: translateY(-85%);
     padding: 5%;
     animation: fadein .5s;
 }
