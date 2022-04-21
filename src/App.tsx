@@ -80,7 +80,11 @@ function App() {
       </div>
       {spread && (
         <div>
-          hello world
+          {spread.map((element, index) => {
+            return (
+              <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" />
+            );
+          })}
         </div>
       )}
     </div>
