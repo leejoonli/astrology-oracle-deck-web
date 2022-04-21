@@ -17,7 +17,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: .5;
+    opacity: .9;
 }
 
 .fanContainer {
@@ -64,13 +64,20 @@
     height: 100vh;
     width: 100vw;
     transform: translateY(-73%);
-    padding: 5%;
-    padding-bottom: 15%;
+    padding: 7.5% 5%;
     animation: fadein .5s;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.cardName,
+.cardTag,
+.cardMeaning,
+.close {
+    color: 'white';
+    text-align: center;
 }
 
 .cardName {
@@ -79,14 +86,12 @@
 }
 
 .cardTag {
-    text-align: center;
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 600;
 }
 
 .cardMeaning {
-    text-align: center;
     line-height: 1.5;
 }
 
