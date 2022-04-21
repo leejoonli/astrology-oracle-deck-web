@@ -65,7 +65,7 @@
     width: 100vw;
     transform: translateY(-73%);
     padding: 5%;
-    padding-bottom: 20%;
+    padding-bottom: 15%;
     animation: fadein .5s;
     display: flex;
     flex-direction: column;
