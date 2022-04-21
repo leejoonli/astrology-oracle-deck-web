@@ -4,14 +4,31 @@
     background-image: url("./img/starrybackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .fanContainer {
     display: flex;
+    justify-content: center;
+}
+
+.spreadContainer {
+    display: flex;
+    justify-content: space-around;
 }
 
 .cardBack,
 .cardFace {
     width: 114px;
     height: 200px;
+}
+
+.modalContainer {
+    z-index: 1;
+    position: absolute;
+    border: 1px solid red;
+    height: 100vh;
+    background-image: url("./img/starrybackground.jpg");
 }

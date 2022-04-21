@@ -79,7 +79,7 @@ function App() {
         <img src={card_back} alt="card back" className="cardBack" />
       </div>
       {spread && (
-        <div>
+        <div className="spreadContainer">
           {spread.map((element, index) => {
             return (
               <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" onClick={() => {
@@ -91,9 +91,9 @@ function App() {
         </div>
       )}
       {modal && (
-        <div>
-          <p>{single?.name}</p>
-          <p>{single?.tag}</p>
+        <div className="modalContainer">
+          <h1>{single?.name}</h1>
+          <h2>{single?.tag}</h2>
           <p>{single?.meaning}</p>
           <button onClick={() => { setModal(false) }}>close</button>
         </div>
