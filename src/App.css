@@ -1,6 +1,9 @@
 .container {
     border: 1px solid red;
     height: 100vh;
+    background-image: url("./img/starrybackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .fanContainer {

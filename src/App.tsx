@@ -82,9 +82,15 @@ function App() {
         <div>
           {spread.map((element, index) => {
             return (
-              <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" />
+              <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" onClick={reading} />
             );
           })}
+        </div>
+      )}
+      {modal && (
+        <div>
+          hello world
+          <button onClick={() => { setModal(false) }}>close</button>
         </div>
       )}
     </div>
