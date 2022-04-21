@@ -2,6 +2,13 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import cards from './cards';
 
+// got the card back from this link
+// https://www.freepik.com/free-vector/hand-drawn-mystical-tarot-mobile-wallpaper_21862422.htm#query=tarot%20cards&position=5&from_view=keyword
+import card_back from './img/cardback.jpg';
+// got the app background from this link
+// https://www.pinterest.com/pin/dump-of-images-that-could-be-used-as-phone-wallpapers-36--775463629566722000/
+import starry_background from './img/starrybackground.jpg';
+
 function App() {
   // interface for typings
   interface Card {
@@ -65,8 +72,12 @@ function App() {
   }, [spread]);
 
   return (
-    <div className="App">
-      hello world
+    <div className="container">
+      <div className="fanContainer">
+        <img src={card_back} alt="card back" className="cardBack" />
+        <img src={card_back} alt="card back" className="cardBack" />
+        <img src={card_back} alt="card back" className="cardBack" />
+      </div>
     </div>
   );
 }

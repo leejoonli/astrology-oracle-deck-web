@@ -1,0 +1,13 @@
+.container {
+    border: 1px solid red;
+    height: 100vh;
+}
+
+.fanContainer {
+    display: flex;
+}
+
+.cardBack {
+    width: 114px;
+    height: 200px;
+}
