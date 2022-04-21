@@ -21,7 +21,7 @@
 .fanContainer {
     display: flex;
     justify-content: center;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     position: relative;
     /* margin-top: 40%; */
     padding-top: 40%;
@@ -37,6 +37,7 @@
 
 .cardBack,
 .cardFace {
+    border: 1px solid red;
     width: 114px;
     height: 200px;
 }

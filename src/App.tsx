@@ -75,8 +75,15 @@ function App() {
     <div className="container">
       <div onClick={selectCards} className="fanContainer">
         <img src={card_back} alt="card back" className="cardBack" />
-        <img src={card_back} alt="card back" className="cardBack" />
-        <img src={card_back} alt="card back" className="cardBack" />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
       </div>
       {spread && (
         <div className="spreadContainer">
