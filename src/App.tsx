@@ -82,14 +82,19 @@ function App() {
         <div>
           {spread.map((element, index) => {
             return (
-              <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" onClick={reading} />
+              <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" onClick={() => {
+                setSingle(element);
+                reading();
+              }} />
             );
           })}
         </div>
       )}
       {modal && (
         <div>
-          hello world
+          <p>{single?.name}</p>
+          <p>{single?.tag}</p>
+          <p>{single?.meaning}</p>
           <button onClick={() => { setModal(false) }}>close</button>
         </div>
       )}
