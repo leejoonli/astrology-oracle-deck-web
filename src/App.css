@@ -21,6 +21,7 @@
 .spreadContainer {
     display: flex;
     justify-content: space-around;
+    padding: 0% 3% 0% 3%;
     /* border: 1px solid red; */
 }
 
@@ -28,6 +29,16 @@
 .cardFace {
     width: 114px;
     height: 200px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .modalContainer {
@@ -38,4 +49,5 @@
     background-image: url("./img/starrybackground.jpg");
     transform: translateY(-83%);
     padding: 5%;
+    animation: fadein .5s;
 }
