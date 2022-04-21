@@ -58,6 +58,7 @@
 }
 
 .modalContainer {
+    border: 1px solid red;
     z-index: 2;
     position: relative;
     display: block;
