@@ -300,7 +300,7 @@ let cards: Array<Card> = [
     },
     {
         name: 'Blue Moon',
-        tag: 'Bellieve in the impossible',
+        tag: 'Believe in the impossible',
         meaning: 'There are usually three Full Moons between each equinox and solstice (and vice versa).  Sometimes, though, we get four Full Moons in a single season.  When that happens, the third of the season\'s four Full Moons is called a Blue Moon - at least, that was the original definition of a Blue Moon.  These days it\'s popular to use the Blue Moon for the second Full Moon in any calendar month that has two Full Moons.  Drawing this card suggests you\'re about to get a rare chance, and that something \'one-off\' could well be about to happen.',
         card_face: blue_moon,
     },
