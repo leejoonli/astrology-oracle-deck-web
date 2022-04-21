@@ -73,13 +73,20 @@ function App() {
 
   return (
     <div className="container">
-      <div onClick={selectCards} className="fanContainer">
+      <div onClick={selectCards} className="fanContainer" style={{ opacity: (modal) && '0', pointerEvents: (modal) && 'none' }}>
         <img src={card_back} alt="card back" className="cardBack" />
-        <img src={card_back} alt="card back" className="cardBack" />
-        <img src={card_back} alt="card back" className="cardBack" />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
+        <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
       </div>
       {spread && (
-        <div>
+        <div className="spreadContainer" style={{ opacity: (modal) && '0', pointerEvents: (modal) && 'none' }}>
           {spread.map((element, index) => {
             return (
               <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" onClick={() => {
@@ -91,11 +98,12 @@ function App() {
         </div>
       )}
       {modal && (
-        <div>
-          <p>{single?.name}</p>
-          <p>{single?.tag}</p>
-          <p>{single?.meaning}</p>
-          <button onClick={() => { setModal(false) }}>close</button>
+        <div className="modalContainer">
+          <img src={single?.card_face} alt="card face" className="cardBack" />
+          <h1 className="cardName">{single?.name}</h1>
+          <h2 className="cardTag">{single?.tag}</h2>
+          <p className="cardMeaning">{single?.meaning}</p>
+          <div onClick={() => { setModal(false) }} className="close" >Close</div>
         </div>
       )}
     </div>

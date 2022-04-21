@@ -1,17 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=My+Soul&display=swap');
+
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    position: relative;
     height: 100vh;
+    width: 100vw;
+}
+
+.container::before {
+    content: "";
     background-image: url("./img/starrybackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .5;
 }
 
 .fanContainer {
     display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    position: relative;
+    padding-top: 40%;
+    margin-bottom: 40%;
+}
+
+.spreadContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0% 3% 0% 3%;
+    /* border: 1px solid red; */
 }
 
 .cardBack,
 .cardFace {
+    /* border: 1px solid red; */
     width: 114px;
     height: 200px;
+}
+
+.cardFace {
+    z-index: 1;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modalContainer {
+    z-index: 2;
+    position: relative;
+    display: block;
+    height: 100vh;
+    transform: translateY(-84.4%);
+    padding: 15% 8% 15% 8%;
+    animation: fadein .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardName {
+    font-size: 2rem;
+    font-family: 'My Soul';
+}
+
+.cardTag {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.cardMeaning {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.close {
+    font-size: 2rem;
+    font-family: 'My Soul';
 }
