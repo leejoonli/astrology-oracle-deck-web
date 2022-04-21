@@ -1,5 +1,5 @@
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100vh;
 }
 
@@ -12,7 +12,7 @@
 .fanContainer {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: relative;
     margin-top: 40%;
     margin-bottom: 40%;
@@ -21,7 +21,7 @@
 .spreadContainer {
     display: flex;
     justify-content: space-around;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .cardBack,
@@ -33,7 +33,9 @@
 .modalContainer {
     z-index: 1;
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100vh;
     background-image: url("./img/starrybackground.jpg");
+    transform: translateY(-83%);
+    padding: 5%;
 }
