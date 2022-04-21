@@ -3,31 +3,13 @@ This application is a simple virtual representation of an astrology oracle deck,
 
 Special thanks to my friend, Danielle Garratt, for most of the artwork.
 
+\*Note: THIS IS ONLY MEANT TO BE USED ON MOBILE DEVICES.  THERE ARE NO MEDIA QUERIES SET UP FOR DESKTOP.
+
 ## Technologies Used
 - Typescript
 - React
 
 ## Installation Instructions
-<!-- You will need to download this application to view it using the QR code reader.
-
-![readme](https://media.git.generalassemb.ly/user/40293/files/f104e780-8ff6-11ec-9b8c-6496562819ba)
-
-1. Visit this link: https://expo.dev/@leejoonli/astrology-oracle-deck.
-2. Scan the QR code with the Expo Go App.
-4. Enjoy the application.
-
-I do not recommend trying to clone this repository and running it locally because it is a bit of a nuisance but if you're intent on doing so you can follow the instructions below.
-
-### React Native Environment
-1. In your terminal run `npm install -g expo-cli`.  This will globally install the Expo CLI.
-2. Install the Expo Go app on your phone.
-3. After installing expo, follow the GitHub installation below.  After you finish the Github Installation steps, move onto step 4.
-4. Run `npm start`. If your app isn't building try and run `export NODE_OPTIONS=--openssl-legacy-provider` first.
-5. You should see a QR code that you can use your Expo app for.
-6. After reading the QR code with Expo, you should be directed to the application.
-
-For more information on React Native Environment go here:
-https://reactnative.dev/docs/environment-setup
 
 ### GitHub Instructions
 1. Open your terminal and navigate to your desired directory where you want to store this repository using `cd YOUR_DIRECTORY_NAME`
@@ -36,9 +18,10 @@ https://reactnative.dev/docs/environment-setup
 4. Fork and clone this repository to your machine using `git clone PASTE_SSH_OR_HTTPS_HERE`
 5. `cd` into the newly created directory
 6. Run `npm i` or `npm install` to install dependencies
+7. Run `npm start` to run your local server.
 
 If you're having difficulty in the installation process, visit this link for more information:
-https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository -->
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
 ## Current Application State
 
@@ -47,11 +30,15 @@ There will be a "spead" of cards that appear at the top of the screen that you w
 
 <img src="https://user-images.githubusercontent.com/65789692/164115092-94eecb48-6850-4e2a-8926-5ff6a610340a.jpg" height="500">
 
+\*Note: This was taken using the React Native version.
+
 ### Card Meaning Modal
 
 When you tap on one of the cards, a modal will appear that displays the card information.
 
 <img src="https://user-images.githubusercontent.com/65789692/164115603-e1506ffa-2a3e-4aad-8835-98f1c5818b3c.jpg" height="500">
+
+\*Note: This was taken using the React Native version.
 
 ## Future Improvements
 
@@ -59,7 +46,7 @@ When you tap on one of the cards, a modal will appear that displays the card inf
 - Adding an option for more than a three card spread.
 - Potentially introducing the idea of different kinds of decks.
 
-\*Note: After deployment, there will be very little to no updates to this repository.  It will essentially become deprecated starting in June 2022.
+\*Note: After deployment, there will be very little to no updates to this repository.  It will essentially become deprecated starting in May 2022.
 
 ## Contribution Guidelines
 
