@@ -73,7 +73,7 @@ function App() {
 
   return (
     <div className="container">
-      <div onClick={selectCards} className="fanContainer">
+      <div onClick={selectCards} className="fanContainer" style={{ opacity: (modal) && '0' }}>
         <img src={card_back} alt="card back" className="cardBack" />
         <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
         <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
@@ -86,7 +86,7 @@ function App() {
         <img src={card_back} alt="card back" className="cardBack" style={{ marginLeft: "-90px" }} />
       </div>
       {spread && (
-        <div className="spreadContainer">
+        <div className="spreadContainer" style={{ opacity: (modal) && '0' }}>
           {spread.map((element, index) => {
             return (
               <img src={element.card_face} alt='card face' key={`${element.name}-${index}`} className="cardFace" onClick={() => {
@@ -98,13 +98,12 @@ function App() {
         </div>
       )}
       {modal && (
-        <div className="modalContainerBackground">
-          <div className="modalContainer">
-            <h1>{single?.name}</h1>
-            <h2>{single?.tag}</h2>
-            <p>{single?.meaning}</p>
-            <button onClick={() => { setModal(false) }}>close</button>
-          </div>
+        <div className="modalContainer">
+          <img src={single?.card_face} alt="card face" className="cardBack" />
+          <h1>{single?.name}</h1>
+          <h2>{single?.tag}</h2>
+          <p>{single?.meaning}</p>
+          <button onClick={() => { setModal(false) }}>close</button>
         </div>
       )}
     </div>
