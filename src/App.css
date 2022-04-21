@@ -63,7 +63,7 @@
     position: relative;
     display: block;
     height: 100vh;
-    transform: translateY(-100%);
+    transform: translateY(-90%);
     padding: 15% 8% 15% 8%;
     animation: fadein .5s;
     display: flex;
